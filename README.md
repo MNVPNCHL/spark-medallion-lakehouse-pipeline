@@ -42,35 +42,3 @@ Optimized tables for reporting & BI tools
 Star-schema–friendly outputs
 
 This layered design ensures data reliability, reusability, and scalability.
-
-
-🏛 Architecture Flow
-Raw Source Data
-       ↓
-Bronze Layer (Raw Ingestion)
-       ↓
-Silver Layer (Cleaned & Validated Data)
-       ↓
-Gold Layer (Aggregated Business Metrics)
-
-🛠 Technologies Used
-
-Apache Spark (PySpark) – Distributed data processing
-
-Python – ETL logic implementation
-
-Parquet / CSV – Storage formats
-
-Medallion Architecture – Data Lakehouse design pattern
-
-Data Modeling Concepts – Aggregations & analytics datasets
-
-📂 Project Structure
-spark-medallion-lakehouse-pipeline/
-│
-├── raw_data/                # Raw input files (Bronze)
-├── bronze/                  # Raw ingested layer
-├── silver/                  # Cleaned & transformed layer
-├── gold/                    # Aggregated analytics layer
-├── scripts/                 # Spark ETL scripts
-└── README.md
